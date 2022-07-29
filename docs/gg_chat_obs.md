@@ -84,3 +84,77 @@
 цвета" значением "1".
 
 ![Пример добавления прозрачности через хромакей OBS](gg_chat_obs_add_transparent_via_obs_01.png)
+
+## Отрисовка имён пользователей и текста одним цветом
+
+Иногда для каких-то стилистических целей хочется, чтобы чат был не таким
+пёстрым и имена рисовались единым цветом. И заодно сменить цвет текста.
+
+Для этого в файл стиля добавлены две переменные:
+
+- --nick-color - задаёт цвет имён пользователей
+- --message-color - задаёт цвет текста и донатов в чате
+
+В самом файле есть две секции, которые изначально закомментированы:
+
+```
+/* Настройка цвета текста в чате */
+/*
+.chat-container .message-block .message,
+.chat-container .message-block.king .message {
+    color: var(--message-color);
+}
+*/
+
+/* Настройка цвета ников в чате */
+/*
+.chat-container .nick.simple,
+.chat-container .nick.bronze,
+.chat-container .nick.silver,
+.chat-container .nick.gold,
+.chat-container .nick.diamond,
+.chat-container .nick.king,
+.chat-container .nick.top-one,
+.chat-container .nick.undead,
+.chat-container .nick.premium,
+.chat-container .nick.premium-personal,
+.chat-container .nick.moderator,
+.chat-container .nick.newguy,
+.chat-container .nick.streamer,
+.chat-container .nick.streamer-helper {
+    color: var(--nick-color);
+}
+*/
+```
+
+Надо их раскомментировать (обе или только одну - по вкусу):
+
+```
+/* Настройка цвета текста в чате */
+.chat-container .message-block .message,
+.chat-container .message-block.king .message {
+    color: var(--message-color);
+}
+
+/* Настройка цвета ников в чате */
+.chat-container .nick.simple,
+.chat-container .nick.bronze,
+.chat-container .nick.silver,
+.chat-container .nick.gold,
+.chat-container .nick.diamond,
+.chat-container .nick.king,
+.chat-container .nick.top-one,
+.chat-container .nick.undead,
+.chat-container .nick.premium,
+.chat-container .nick.premium-personal,
+.chat-container .nick.moderator,
+.chat-container .nick.newguy,
+.chat-container .nick.streamer,
+.chat-container .nick.streamer-helper {
+    color: var(--nick-color);
+}
+```
+
+после этого имена и сообщения будут рисоваться выбранными цветами.
+
+![Изменение имён пользователей](gg_chat_obs_change_message_color_01.png)
