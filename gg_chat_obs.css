@@ -55,7 +55,8 @@ div.chat-control-block { display: none; }
 
 /* Настройка цвета текста в чате */
 /*
-.chat-container .message-block .message {
+.chat-container .message-block .message,
+.chat-container .message-block.king .message {
     color: var(--message-color);
 }
 */
