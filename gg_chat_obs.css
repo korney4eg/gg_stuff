@@ -22,6 +22,8 @@ body, div.chat-container {
     padding: 8px;
     background-color: #0a0d11e3;
 }
+/* Скрытие сообщения дня и кнопки сообщения дня */
+div.popup-wrap { display: none; }
 /* прячем панель чата для ввода текста, смайлы и другие кнопки */
 div.chat-control-block { display: none; }
 /* хз что, но вроде нужно */
