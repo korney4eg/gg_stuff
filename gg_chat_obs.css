@@ -29,12 +29,12 @@ div.chat-control-block { display: none; }
 .bg-block { display: none !important; }
 
 /* После того, как спрятали полоску для ввода текста, растягиваем чатик вниз */
-div.content-window { height: 100% !important; }
+.content-window {
+    height: 100% !important;
+    border-left: 0;
+}
 .chat-container_new-guy .content-window { height: 100% !important; }
-.content-window { height: 100%; }
-.chat-container .content-window { height: 100% }
-.chat-container { border-left: 0; }
-div.content-window { height: 100% !important; }
+.chat-container .content-window { height: 100% !important}
 
 /* Скачиваем нужный шрифт */
 @font-face {
