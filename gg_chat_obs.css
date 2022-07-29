@@ -1,54 +1,52 @@
-/* эта секция для того, чтобы настроить прозрачный фон чатика.*/
-.chat-container .content-window .bg-block {
-    display: none;
- }
- .chat-container .chat-control-block {
-    display: none;
- }
- 
- 
-  .chat-container {
-    background-color: #0a0d11e3;
- }
- html {
-    background-color: #0a0d11e3;
- }
- 
- 
- /* ------------------------ */
- /* chat-container */
- body, div.chat-container {
+/* Цвет фона окна чата. Для настройки прозрачности из единого места. */
+:root {
+  --new-bg-color: #0a0d11e3;
+}
+
+/* Эта секция для того, чтобы настроить прозрачный фон чатика. */
+.chat-container { background-color: var(--new-bg-color); }
+html { background-color: var(--new-bg-color); }
+
+/* Настройка основных параметров окна чата */
+body, div.chat-container {
     border-left: none !important;
-          padding: 8px;
- background-color: #0a0d11e3;
- }
- /* прячем панель чата для ввода текста, смайлы и другие кнопки */
- div.chat-control-block { display: none; }
- /* хз что, но вроде нужно */
- .bg-block { display: none !important; }
- /* после того, как спрятали полоску для ввода текста, растягиваем чатик вниз */
- div.content-window { height: 100% !important; }
- .chat-container_new-guy .content-window { height: 100% !important; }
- .content-window { height: 100%; }
- .chat-container .content-window { height: 100% }
- .chat-container { border-left: 0; }
- div.content-window { height: 100% !important; }
- 
- /* скачиваем нужный шрифт */
- 
- @font-face {
-  font-family: "Hack Regular Nerd Font Complete";
-  src: url("https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf");
- }
- 
- /* конфигурируем шрифт сообщений */
- .chat-container .message-block .message {
+    padding: 8px;
+    background-color: var(--new-bg-color);
+}
+
+/* Скрытие сообщения дня и кнопки сообщения дня */
+div.popup-wrap { display: none; }
+
+/* Скрытие панели чата для ввода текста, смайлов и другие кнопки */
+.chat-container .chat-control-block { display: none; }
+div.chat-control-block { display: none; }
+
+/* Маленький незаметный блок с красивым градиентом позади чата, он не нужен */
+.chat-container .content-window .bg-block { display: none; }
+.bg-block { display: none !important; }
+
+/* После того, как спрятали полоску для ввода текста, растягиваем чатик вниз */
+.content-window {
+    height: 100% !important;
+    border-left: 0;
+}
+.chat-container_new-guy .content-window { height: 100% !important; }
+.chat-container .content-window { height: 100% !important}
+
+/* Скачиваем нужный шрифт */
+@font-face {
+    font-family: "Hack Regular Nerd Font Complete";
+    src: url("https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf");
+}
+
+/* Конфигурируем шрифт сообщений */
+.chat-container .message-block .message {
     font-family: "Hack Regular Nerd Font Complete";
     font-size: 19px
- }
- 
- /* конфигурируем шрифт ников */
- .chat-container .nick {
+}
+
+/* Конфигурируем шрифт ников */
+.chat-container .nick {
     font-family: "Hack Regular Nerd Font Complete";
     font-size: 19px
- }
+}
