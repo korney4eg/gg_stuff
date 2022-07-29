@@ -1,54 +1,54 @@
 /* эта секция для того, чтобы настроить прозрачный фон чатика.*/
 .chat-container .content-window .bg-block {
     display: none;
- }
- .chat-container .chat-control-block {
+}
+.chat-container .chat-control-block {
     display: none;
- }
- 
- 
-  .chat-container {
+}
+
+
+.chat-container {
     background-color: #0a0d11e3;
- }
- html {
+}
+html {
     background-color: #0a0d11e3;
- }
- 
- 
- /* ------------------------ */
- /* chat-container */
- body, div.chat-container {
+}
+
+
+/* ------------------------ */
+/* chat-container */
+body, div.chat-container {
     border-left: none !important;
-          padding: 8px;
- background-color: #0a0d11e3;
- }
- /* прячем панель чата для ввода текста, смайлы и другие кнопки */
- div.chat-control-block { display: none; }
- /* хз что, но вроде нужно */
- .bg-block { display: none !important; }
- /* после того, как спрятали полоску для ввода текста, растягиваем чатик вниз */
- div.content-window { height: 100% !important; }
- .chat-container_new-guy .content-window { height: 100% !important; }
- .content-window { height: 100%; }
- .chat-container .content-window { height: 100% }
- .chat-container { border-left: 0; }
- div.content-window { height: 100% !important; }
- 
- /* скачиваем нужный шрифт */
- 
- @font-face {
-  font-family: "Hack Regular Nerd Font Complete";
-  src: url("https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf");
- }
- 
- /* конфигурируем шрифт сообщений */
- .chat-container .message-block .message {
+    padding: 8px;
+    background-color: #0a0d11e3;
+}
+/* прячем панель чата для ввода текста, смайлы и другие кнопки */
+div.chat-control-block { display: none; }
+/* хз что, но вроде нужно */
+.bg-block { display: none !important; }
+/* после того, как спрятали полоску для ввода текста, растягиваем чатик вниз */
+div.content-window { height: 100% !important; }
+.chat-container_new-guy .content-window { height: 100% !important; }
+.content-window { height: 100%; }
+.chat-container .content-window { height: 100% }
+.chat-container { border-left: 0; }
+div.content-window { height: 100% !important; }
+
+/* скачиваем нужный шрифт */
+
+@font-face {
+    font-family: "Hack Regular Nerd Font Complete";
+    src: url("https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf");
+}
+
+/* конфигурируем шрифт сообщений */
+.chat-container .message-block .message {
     font-family: "Hack Regular Nerd Font Complete";
     font-size: 19px
- }
- 
- /* конфигурируем шрифт ников */
- .chat-container .nick {
+}
+
+/* конфигурируем шрифт ников */
+.chat-container .nick {
     font-family: "Hack Regular Nerd Font Complete";
     font-size: 19px
- }
+}
