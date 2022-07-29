@@ -17,12 +17,8 @@
  * и задать первые три параметра (сходство, гладкость, снижение
  * утечки) значением "1".
  */
-.chat-container {
-    background-color: var(--new-bg-color);
-}
-html {
-    background-color: var(--new-bg-color);
-}
+.chat-container { background-color: var(--new-bg-color); }
+html { background-color: var(--new-bg-color); }
 
 /* Настройка основных параметров окна чата */
 body, div.chat-container {
