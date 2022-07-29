@@ -4,12 +4,6 @@
  * и задать первые три параметра (сходство, гладкость, снижение
  * утечки) значением "1".
  */
-.chat-container .content-window .bg-block {
-    display: none;
-}
-.chat-container .chat-control-block {
-    display: none;
-}
 .chat-container {
     background-color: #0a0d11e3;
 }
@@ -28,9 +22,11 @@ body, div.chat-container {
 div.popup-wrap { display: none; }
 
 /* Скрытие панели чата для ввода текста, смайлов и другие кнопки */
+.chat-container .chat-control-block { display: none; }
 div.chat-control-block { display: none; }
 
 /* Маленький незаметный блок с красивым градиентом позади чата, он не нужен */
+.chat-container .content-window .bg-block { display: none; }
 .bg-block { display: none !important; }
 
 /* После того, как спрятали полоску для ввода текста, растягиваем чатик вниз */
