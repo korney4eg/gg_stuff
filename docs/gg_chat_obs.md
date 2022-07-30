@@ -101,7 +101,8 @@
 /* Настройка цвета текста в чате */
 /*
 .chat-container .message-block .message,
-.chat-container .message-block.king .message {
+...
+p[_ngcontent-sud-c7] {
     color: var(--message-color);
 }
 */
@@ -109,19 +110,8 @@
 /* Настройка цвета ников в чате */
 /*
 .chat-container .nick.simple,
-.chat-container .nick.bronze,
-.chat-container .nick.silver,
-.chat-container .nick.gold,
-.chat-container .nick.diamond,
-.chat-container .nick.king,
-.chat-container .nick.top-one,
-.chat-container .nick.undead,
-.chat-container .nick.premium,
-.chat-container .nick.premium-personal,
-.chat-container .nick.moderator,
-.chat-container .nick.newguy,
-.chat-container .nick.streamer,
-.chat-container .nick.streamer-helper {
+...
+your-nick {
     color: var(--nick-color);
 }
 */
@@ -132,25 +122,15 @@
 ```
 /* Настройка цвета текста в чате */
 .chat-container .message-block .message,
-.chat-container .message-block.king .message {
+...
+p[_ngcontent-sud-c7] {
     color: var(--message-color);
 }
 
 /* Настройка цвета ников в чате */
 .chat-container .nick.simple,
-.chat-container .nick.bronze,
-.chat-container .nick.silver,
-.chat-container .nick.gold,
-.chat-container .nick.diamond,
-.chat-container .nick.king,
-.chat-container .nick.top-one,
-.chat-container .nick.undead,
-.chat-container .nick.premium,
-.chat-container .nick.premium-personal,
-.chat-container .nick.moderator,
-.chat-container .nick.newguy,
-.chat-container .nick.streamer,
-.chat-container .nick.streamer-helper {
+...
+your-nick {
     color: var(--nick-color);
 }
 ```
