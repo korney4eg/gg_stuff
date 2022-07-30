@@ -1,11 +1,16 @@
 /* Цвет фона окна чата. Для настройки прозрачности из единого места. */
 :root {
   --new-bg-color: #0a0d11e3;
+  --nick-color: #4e822b;
+  --message-color: #7ff32f;
 }
 
 /* Эта секция для того, чтобы настроить прозрачный фон чатика. */
 .chat-container { background-color: var(--new-bg-color); }
 html { background-color: var(--new-bg-color); }
+
+/* Фон блока с сообщением о дарении премиума */
+.animated-gift { background-color: var(--new-bg-color); }
 
 /* Настройка основных параметров окна чата */
 body, div.chat-container {
@@ -50,3 +55,34 @@ div.chat-control-block { display: none; }
     font-family: "Hack Regular Nerd Font Complete";
     font-size: 19px
 }
+
+/* Настройка цвета текста в чате */
+/*
+.chat-container .message-block .message,
+.chat-container .message-block.king .message,
+p[_ngcontent-sud-c7] {
+    color: var(--message-color);
+}
+*/
+
+/* Настройка цвета ников в чате */
+/*
+.chat-container .nick.simple,
+.chat-container .nick.bronze,
+.chat-container .nick.silver,
+.chat-container .nick.gold,
+.chat-container .nick.diamond,
+.chat-container .nick.king,
+.chat-container .nick.top-one,
+.chat-container .nick.undead,
+.chat-container .nick.premium,
+.chat-container .nick.premium-personal,
+.chat-container .nick.moderator,
+.chat-container .nick.newguy,
+.chat-container .nick.streamer,
+.chat-container .nick.streamer-helper,
+donor,
+your-nick {
+    color: var(--nick-color);
+}
+*/
