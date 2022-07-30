@@ -9,6 +9,9 @@
 .chat-container { background-color: var(--new-bg-color); }
 html { background-color: var(--new-bg-color); }
 
+/* Фон блока с сообщением о дарении премиума */
+.animated-gift { background-color: var(--new-bg-color); }
+
 /* Настройка основных параметров окна чата */
 body, div.chat-container {
     border-left: none !important;
@@ -56,7 +59,8 @@ div.chat-control-block { display: none; }
 /* Настройка цвета текста в чате */
 /*
 .chat-container .message-block .message,
-.chat-container .message-block.king .message {
+.chat-container .message-block.king .message,
+p[_ngcontent-sud-c7] {
     color: var(--message-color);
 }
 */
@@ -76,7 +80,9 @@ div.chat-control-block { display: none; }
 .chat-container .nick.moderator,
 .chat-container .nick.newguy,
 .chat-container .nick.streamer,
-.chat-container .nick.streamer-helper {
+.chat-container .nick.streamer-helper,
+donor,
+your-nick {
     color: var(--nick-color);
 }
 */
