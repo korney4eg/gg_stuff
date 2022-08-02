@@ -98,14 +98,13 @@
 - `--nick-color` - задаёт цвет имён пользователей
 - `--message-color` - задаёт цвет текста и донатов в чате
 
-В самом файле есть две секции, которые изначально закомментированы:
+В самом файле есть секции, которые изначально закомментированы:
 
 ```
 /* Настройка цвета текста в чате */
 /*
 .chat-container .message-block .message,
-...
-p[_ngcontent-sud-c7] {
+.chat-container .message-block.king .message {
     color: var(--message-color);
 }
 */
@@ -114,27 +113,44 @@ p[_ngcontent-sud-c7] {
 /*
 .chat-container .nick.simple,
 ...
-your-nick {
+.chat-container .nick.streamer-helper {
     color: var(--nick-color);
+}
+*/
+
+/* Настройка цвета текста в блоке дарения премиума */
+/*
+p { color: var(--message-color) !important; }
+
+.donor,
+.your-nick {
+    color: var(--nick-color) !important;
 }
 */
 ```
 
-Надо их раскомментировать (обе или только одну - по вкусу):
+Надо их раскомментировать (все, некоторые или только одну - по вкусу):
 
 ```
 /* Настройка цвета текста в чате */
 .chat-container .message-block .message,
-...
-p[_ngcontent-sud-c7] {
+.chat-container .message-block.king .message {
     color: var(--message-color);
 }
 
 /* Настройка цвета ников в чате */
 .chat-container .nick.simple,
 ...
-your-nick {
+.chat-container .nick.streamer-helper {
     color: var(--nick-color);
+}
+
+/* Настройка цвета текста в блоке дарения премиума */
+p { color: var(--message-color) !important; }
+
+.donor,
+.your-nick {
+    color: var(--nick-color) !important;
 }
 ```
 
