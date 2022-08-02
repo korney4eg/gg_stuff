@@ -22,6 +22,9 @@ body, div.chat-container {
 /* Скрытие сообщения дня и кнопки сообщения дня */
 div.popup-wrap { display: none; }
 
+/* Скрытие закреплённых заданий */
+div.pinned-block { display: none; }
+
 /* Скрытие панели чата для ввода текста, смайлов и другие кнопки */
 .chat-container .chat-control-block { display: none; }
 div.chat-control-block { display: none; }
