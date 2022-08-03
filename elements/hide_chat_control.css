@@ -1,0 +1,8 @@
+/* Скрытие панели чата для ввода текста, смайлов и другие кнопки */
+.chat-control-block { display: none; }
+.new-message-block { display: none; }
+
+.task-block .btn-block,
+.bot-block {
+    display: none !important;
+}

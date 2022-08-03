@@ -1,0 +1,2 @@
+/* Скрытие закреплённых заданий */
+.pinned-block { display: none; }

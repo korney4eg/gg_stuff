@@ -1,0 +1,28 @@
+:root {
+  --nick-color: #4e822b;
+}
+
+/* Настройка цвета ников в чате */
+.chat-container .nick.simple,
+.chat-container .nick.bronze,
+.chat-container .nick.silver,
+.chat-container .nick.gold,
+.chat-container .nick.diamond,
+.chat-container .nick.king,
+.chat-container .nick.top-one,
+.chat-container .nick.undead,
+.chat-container .nick.premium,
+.chat-container .nick.premium-personal,
+.chat-container .nick.moderator,
+.chat-container .nick.newguy,
+.chat-container .nick.streamer,
+.chat-container .nick.streamer-helper {
+    color: var(--nick-color);
+}
+
+.donor,
+.your-nick,
+.task-info,
+.money {
+    color: var(--nick-color) !important;
+}

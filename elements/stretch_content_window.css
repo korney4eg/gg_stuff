@@ -1,0 +1,6 @@
+/* После того, как спрятали полоску для ввода текста, растягиваем чатик вниз */
+.chat-container_new-guy .content-window,
+.chat-container .content-window {
+    height: 100% !important;
+    border: 1px;
+}

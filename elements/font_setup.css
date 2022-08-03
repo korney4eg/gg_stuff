@@ -1,0 +1,17 @@
+/* Скачиваем нужный шрифт */
+@font-face {
+    font-family: "Hack Regular Nerd Font Complete";
+    src: url("https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf");
+}
+
+/* Конфигурируем шрифт сообщений */
+.chat-container .message-block .message {
+    font-family: "Hack Regular Nerd Font Complete";
+    font-size: 19px /* 16px default */
+}
+
+/* Конфигурируем шрифт ников */
+.chat-container .nick {
+    font-family: "Hack Regular Nerd Font Complete";
+    font-size: 19px /* 16px default */
+}
