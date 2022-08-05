@@ -1,7 +1,3 @@
-:root {
-  --nick-color: #4e822b;
-}
-
 /* Настройка цвета ников в чате */
 .chat-container .nick.simple,
 .chat-container .nick.bronze,

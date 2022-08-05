@@ -1,7 +1,3 @@
-:root {
-  --new-bg-color: #0a0d11e3;
-}
-
 /* Эта секция для того, чтобы настроить фон чатика. */
 html { background-color: var(--new-bg-color); }
 body { background-color: var(--new-bg-color); }
