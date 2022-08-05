@@ -7,11 +7,11 @@
 /* Конфигурируем шрифт сообщений */
 .chat-container .message-block .message {
     font-family: "Hack Regular Nerd Font Complete";
-    font-size: 19px /* 16px default */
+    font-size: 19px; /* 16px default */
 }
 
 /* Конфигурируем шрифт ников */
 .chat-container .nick {
     font-family: "Hack Regular Nerd Font Complete";
-    font-size: 19px /* 16px default */
+    font-size: 19px; /* 16px default */
 }
