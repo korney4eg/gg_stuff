@@ -5,7 +5,17 @@
 - его прозрачность;
 - цвета ников и текста.
 
-Файл стиля: [gg_chat_obs.css](../gg_chat_obs.css)
+## Файлы стилей
+
+Обычный чат [css/default.css](css/default.css)
+
+Обычный чат без значков пользователей
+[css/default_no_icons.css](css/default_no_icons.css)
+
+Перекрашенный чат [css/recolor.css](css/recolor.css)
+
+Перекрашенный чат без значков пользователей
+[css/recolor_no_icons.css](css/recolor_no_icons.css)
 
 ## Дисклеймер
 
