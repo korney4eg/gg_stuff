@@ -1,0 +1,2 @@
+/* Скрытие иконок у имён пользователей */
+.chat-container .user .icon { display: none; }

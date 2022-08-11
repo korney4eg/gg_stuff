@@ -1,0 +1,8 @@
+00variables
+color background
+hide message of the day
+hide pinned challenges
+hide chat control
+hide bg block
+stretch_content_window.css
+font_setup

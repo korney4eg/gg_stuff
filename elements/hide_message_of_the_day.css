@@ -1,0 +1,5 @@
+/* Скрытие сообщения дня и кнопки сообщения дня */
+.popup-wrap,
+.popup-block {
+    display: none;
+}

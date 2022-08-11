@@ -1,0 +1,98 @@
+/* Переменные для настройки прозрачности и фона одним цветом */
+:root {
+  --new-bg-color: #0a0d11e3; /* Цвет фона окна чата */
+  --nick-color: #4e822b; /* Цвет ников в чате (если добавлены стили) */
+  --message-color: #7ff32f; /* Цвет сообщений в чате (если добавлены стили) */
+}
+
+/* Эта секция для того, чтобы настроить фон чатика. */
+html { background-color: var(--new-bg-color); }
+body { background-color: var(--new-bg-color); }
+.chat-container { background-color: var(--new-bg-color); }
+.pinned-block { background-color: var(--new-bg-color) !important; }
+.animated-gift { background-color: var(--new-bg-color) !important; }
+.task-block { background-color: var(--new-bg-color) !important; }
+
+/* Скрытие сообщения дня и кнопки сообщения дня */
+.popup-wrap,
+.popup-block {
+    display: none;
+}
+
+/* Скрытие закреплённых заданий */
+.pinned-block { display: none; }
+
+/* Скрытие панели чата для ввода текста, смайлов и другие кнопки */
+.chat-control-block { display: none; }
+.new-message-block { display: none; }
+
+.task-block .btn-block,
+.bot-block {
+    display: none !important;
+}
+
+/* Маленький незаметный блок с красивым градиентом позади чата, он не нужен */
+.bg-block { display: none }
+
+/* После того, как спрятали полоску для ввода текста, растягиваем чатик вниз */
+.chat-container_new-guy .content-window,
+.chat-container .content-window {
+    height: 100% !important;
+    border: 1px;
+}
+
+/* Скачиваем нужный шрифт */
+@font-face {
+    font-family: "Hack Regular Nerd Font Complete";
+    src: url("https://raw.githubusercontent.com/ryanoasis/nerd-fonts/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf");
+}
+
+/* Конфигурируем шрифт сообщений */
+.chat-container .message-block .message {
+    font-family: "Hack Regular Nerd Font Complete";
+    font-size: 19px; /* 16px default */
+}
+
+/* Конфигурируем шрифт ников */
+.chat-container .nick {
+    font-family: "Hack Regular Nerd Font Complete";
+    font-size: 19px; /* 16px default */
+}
+
+/* Настройка цвета текста в чате */
+.chat-container .message-block .message,
+.chat-container .message-block.king .message {
+    color: var(--message-color);
+}
+
+p,
+.task-title,
+.task-text {
+    color: var(--message-color) !important;
+}
+
+/* Настройка цвета ников в чате */
+.chat-container .nick.simple,
+.chat-container .nick.bronze,
+.chat-container .nick.silver,
+.chat-container .nick.gold,
+.chat-container .nick.diamond,
+.chat-container .nick.king,
+.chat-container .nick.top-one,
+.chat-container .nick.undead,
+.chat-container .nick.premium,
+.chat-container .nick.premium-personal,
+.chat-container .nick.moderator,
+.chat-container .nick.newguy,
+.chat-container .nick.streamer,
+.chat-container .nick.streamer-helper {
+    color: var(--nick-color);
+}
+
+.donor,
+.your-nick,
+.task-info,
+.money {
+    color: var(--nick-color) !important;
+}
+
