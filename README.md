@@ -30,3 +30,7 @@
 [css/recolor_no_icons.css](css/recolor_no_icons.css)
 
 ![Перекрашенный чат без значков пользователей](docs/theme/recolor_no_icons.png)
+
+# Информация для разработчиков
+
+Является строго секретной и [находится тут](docs/developer.md)
